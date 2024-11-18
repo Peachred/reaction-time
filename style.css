@@ -56,8 +56,8 @@ body {
 
 #canvas {
     display: block;
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
     height: 400px;
     background: rgb(237, 255, 172);
     border: 2px solid #333;
