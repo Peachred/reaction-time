@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo_back">
+        <img src="logo.svg" alt="Logo" class="logo">
+    </div>
+    <div class="header">
+       <h1>Reaction Test</h1>   
+    </div>
+    <div class="navigation">
+        <!-- <h2>Check out your reaction speed!</h2> -->
+        <p class="information">Click the area after color changed to GREEN</p>
+    </div>
+
+    <!-- Game Section -->
+    <div class="canvas-parent">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- Control Buttons -->
+    <div id="controls" style="text-align: center;">
+        <button id="start">Start</button>
+        <button id="reset" style="display: none;">Reset</button> <!-- Reset button hidden initially -->
+    </div>
+
+    <!-- Score Table -->
+    <div id="scores">
+        <table>
+            <thead>
+                <tr>
+                    <th>Attempt</th>
+                    <th>Reaction Time (ms)</th>
+                </tr>
+            </thead>
+            <tbody id="scoreTableBody"></tbody>
+        </table>
+    </div>
+
+    <!-- Summary Section -->
+    <div id="summary">
+        <h2>Average Reaction Time: <span id="average"></span> ms</h2>
+        <button id="restart">Start Again</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
